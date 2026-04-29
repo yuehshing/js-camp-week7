@@ -192,7 +192,7 @@ async function getProductsWithAxios() {
 async function addToCartWithAxios(productId, quantity) {
   // 請實作此函式
   // 提示：axios.post(url, data) 會自動設定 Content-Type
-  const response = await axios.get(`${BASE_URL}/api/livejs/v1/customer/${API_PATH}/carts`,{
+  const response = await axios.post(`${BASE_URL}/api/livejs/v1/customer/${API_PATH}/carts`,{
     data:{
       productId,
       quantity
